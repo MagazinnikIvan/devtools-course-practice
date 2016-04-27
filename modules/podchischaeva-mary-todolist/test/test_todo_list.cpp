@@ -79,12 +79,13 @@ TEST(TODOlist, Throw_When_Add_Existing_Title_By_Parameters) {
 TEST(TODOlist, Can_Get_Size) {
     // Arrange
     TODOlist list;
+    unsigned int expected = 1;
 
     // Act
     list.addItem("abc");
 
     // Assert
-    EXPECT_EQ(1, list.size());
+    EXPECT_EQ(expected, list.size());
 }
 
 TEST(TODOlist, Can_Get_Item) {

@@ -1,6 +1,7 @@
 // Copyright 2016 Pronina Maria
 #include "include/RomanConverter.h"
 #include <string>
+#include <stdexcept>
 #include <vector>
 #include <algorithm>
 static const vector<int> kValues =
@@ -224,6 +225,3 @@ string RomanConverter::ConvertArabicToRoman(int arabic) {
 
     return result;
 }
-
-
-
